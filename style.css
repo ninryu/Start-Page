@@ -1,14 +1,35 @@
+@media only screen and (min-width: 1120px) {
+
+.links {
+	display: -moz-box;
+	display: -webkit-box;
+	width: 100%;
+}
+.container{
+	top: 5%;
+}
+} 
+
+@media only screen and (max-width: 1400px) {
+
+.container{
+	top: 25%;
+}
+}
+
+ 
+
 @font-face {
-	font-family: 'fira';
-	src:  url('FiraCode-Retina.ttf') format('ttf'),
-	local('FiraCode-Retina');
+	font-family: 'iosevka';
+	src:  url('iosevka-extrabold.ttf') format('ttf'),
+	local('Iosevka-ExtraBold');
 	font-style: normal;
 	font-weight: normal;
 }
 @font-face {
-	font-family: 'fira';
-	src:  url('FiraCode-Light.ttf') format('ttf'),
-	local('FiraCode-Light');
+	font-family: 'iosevka';
+	src:  url('iosevka-light.ttf') format('ttf'),
+	local('Iosevka-Light');
 	font-style: normal;
 	font-weight: lighter;
 
@@ -18,26 +39,37 @@
 html, body{
 	margin: 0;
 	padding: 0;
+	background: url(images/bg.jpg) no-repeat center center fixed; 
 	background-color: #141516;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 	color: #FFFFFF;
 	font-size: 14px;
 }
 
 * {
-	font-family: 'fira';
+	font-family: 'iosevka';
 	font-weight: lighter;
 }
 
-#container {
-	position: absolute;
+/*You may find it weird but i find it more useful when it is close to the top.*/
+.container {
+	top : 15px;
+	position: relative;
 	padding: 0 20px 0 20px;
-	top: 35%;
 	left: 0;
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
-	width: 700px;
+	width: 50%;
 	height: auto;
+}
+
+.search_form {
+
+  	min-width: 18rem;
 }
 
 #header {
@@ -90,14 +122,19 @@ html, body{
 }
 
 h3 {
+	display: inline;
 	font-size: 14px;
 	padding-bottom: 0;
 	margin-bottom: 0;
 	margin-top: 0;
 }
 
-.cyan {
-	color: #9aedfe;
+.neonblue.hover{
+	text-shadow: black 1em 1em 2em;
+}
+.neonblue {
+
+	color: #00FFFF;
 	padding: 0;
 }
 
@@ -109,7 +146,7 @@ h3 {
 .green {
 	font-weight: bold;
 	padding: 0;
-	color: #5af78e;
+	color: #00FF00;
 }
 
 .pink {
@@ -117,9 +154,9 @@ h3 {
 	color: #ff6ac1;
 }
 
-.red {
+.neonred {
 	padding: 0;
-	color: #ff5c57;
+	color: #FF0000;
 }
 
 form {
