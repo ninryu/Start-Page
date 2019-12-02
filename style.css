@@ -20,16 +20,16 @@
  
 
 @font-face {
-	font-family: 'iosevka';
-	src:  url('iosevka-extrabold.ttf') format('ttf'),
-	local('Iosevka-ExtraBold');
+	font-family: 'fira';
+	src:  url('FiraCode-Retina.ttf') format('ttf'),
+	local('FiraCode-Retina');
 	font-style: normal;
 	font-weight: normal;
 }
 @font-face {
-	font-family: 'iosevka';
-	src:  url('iosevka-light.ttf') format('ttf'),
-	local('Iosevka-Light');
+	font-family: 'fira';
+	src:  url('FiraCode-Light.ttf') format('ttf'),
+	local('FiraCode-Light');
 	font-style: normal;
 	font-weight: lighter;
 
@@ -50,7 +50,7 @@ html, body{
 }
 
 * {
-	font-family: 'iosevka';
+	font-family: 'fira';
 	font-weight: lighter;
 }
 
@@ -172,3 +172,4 @@ input 	{
 	width: 70%;
 	font-size: 14px;
 }
+
