@@ -56,7 +56,7 @@ html, body{
 
 /*You may find it weird but i find it more useful when it is close to the top.*/
 .container {
-	top : 205px;
+	top : 255px;
 	position: relative;
 	padding: 0 20px 0 20px;
 	left: 0;
